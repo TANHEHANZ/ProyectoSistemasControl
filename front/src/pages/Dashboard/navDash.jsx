@@ -1,26 +1,61 @@
 import React, { useState } from "react";
 import { Outlet } from "react-router-dom";
 import { Container, NavLink } from "../../styles/styleGlobal";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFilter,
+  faCircleNodes,
+  faHouse,
+  faDatabase,
+  faBoreHole,
+  faWifi,
+} from "@fortawesome/free-solid-svg-icons";
+
 const NavDash = () => {
   const [expandir, setExpandir] = useState(false);
   return (
     <Container>
       <nav>
-        <NavLink to="/dashboard/Panel">Panel General</NavLink>
-        <NavLink to="/dashboard/Mapa">Mapa</NavLink>
-        <button onClick={() => setExpandir(!expandir)}>Sensores</button>
+        <div>
+          <strong>
+            {" "}
+            <FontAwesomeIcon icon={faBoreHole} bounce /> Sistemas
+          </strong>{" "}
+          de Control
+        </div>
+        <section>
+          <FontAwesomeIcon icon={faHouse} />
+          <NavLink to="/dashboard/Panel">Panel General</NavLink>
+        </section>
+        {/* <section>
+          <img src="" alt="" />
+          <NavLink to="/dashboard/Mapa">Mapa</NavLink>
+        </section> */}
+        <small>
+          <FontAwesomeIcon icon={faCircleNodes} />{" "}
+          <button onClick={() => setExpandir(!expandir)}>Sensores</button>
+        </small>
         {expandir && (
-          <article>
-            <NavLink to="/dashboard/Sensor1">Sensor 1</NavLink>
-            <NavLink to="/dashboard/Sensor2">Sensor 2</NavLink>
-            <NavLink to="/dashboard/Sensor3">Sensor 3</NavLink>
-            <NavLink to="/dashboard/Sensor4">Sensor 4</NavLink>
-          </article>
+          <aside>
+            <section>
+            <FontAwesomeIcon icon={faWifi} rotation={270} />
+              <NavLink to="/dashboard/Sensor1">Sensor 1</NavLink>
+            </section>
+            <section>
+            <FontAwesomeIcon icon={faWifi} rotation={270} />
+              <NavLink to="/dashboard/Sensor2">Sensor 2</NavLink>
+            </section>
+          </aside>
         )}
-        <NavLink to="/dashboard/Graficos">Graficos Comparativos</NavLink>
-        <NavLink to="/dashboard/Filtro">Filtro de datos</NavLink>
-        <NavLink to="/dashboard/Historicos">Historicos Generales</NavLink>
-        <NavLink to="/dashboard/Pagina">Pagina Usuarios</NavLink>
+        <section>
+          <FontAwesomeIcon icon={faFilter} />
+          <NavLink to="/dashboard/Filtro">Filtro de datos</NavLink>
+        </section>
+        <section>
+          <FontAwesomeIcon icon={faDatabase} />
+          <NavLink to="/dashboard/Historicos">Historicos Generales</NavLink>
+        </section>
       </nav>
       <section>
         <Outlet />
