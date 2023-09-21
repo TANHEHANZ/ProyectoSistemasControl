@@ -19,9 +19,8 @@ const NavDash = () => {
       <nav>
         <div>
           <strong>
-            {" "}
             <FontAwesomeIcon icon={faBoreHole} bounce /> Sistemas
-          </strong>{" "}
+          </strong>
           de Control
         </div>
         <section>
@@ -33,7 +32,7 @@ const NavDash = () => {
           <NavLink to="/dashboard/Mapa">Mapa</NavLink>
         </section> */}
         <small>
-          <FontAwesomeIcon icon={faCircleNodes} />{" "}
+          <FontAwesomeIcon icon={faCircleNodes} />
           <button onClick={() => setExpandir(!expandir)}>Sensores</button>
         </small>
         {expandir && (

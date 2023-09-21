@@ -21,6 +21,7 @@ export const Container = styled.section`
       gap:.5em;
       padding: 0 1em;
       margin: 0 auto;
+      transition:all .5s ease-in-out;
       &:hover {
         border-left: solid 4px ${colors.primary};
       }
