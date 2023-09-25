@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateSensoresTable extends Migration
+class CreateSensorGasTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,11 @@ class CreateSensoresTable extends Migration
      */
     public function up()
     {
-        Schema::create('sensores', function (Blueprint $table) {
+        Schema::create('sensor_gases', function (Blueprint $table) {
             $table->id();
-            $table->string("nombreSensor");
-            $table->doble("parametros");
-            $table->id();
+            $table->dateTime('date');
+            $table->float('valueGas');
+            $table->boolean('state')->nullable();
             $table->timestamps();
         });
     }
@@ -29,6 +29,6 @@ class CreateSensoresTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('sensores');
+        Schema::dropIfExists('sensor_gases');
     }
 }
