@@ -24,8 +24,6 @@ Route::get('/sensor/tempHum', [ControllerTempHum::class, 'index']);
 Route::put('/sensor/tempHum/{id}', [ControllerTempHum::class, 'update']);
 Route::delete('/sensor/tempHum/{id}', [ControllerTempHum::class, 'destroy']);
 
-
-
 Route::get('/sensor/Configservo', [ControllerServo::class, 'index']);
 Route::post('/sensor/Configservo', [ControllerServo::class, 'store']);
 Route::put('/sensor/Configservo/{id}', [ControllerServo::class, 'update']);

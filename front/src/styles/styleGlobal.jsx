@@ -214,7 +214,7 @@ export const PanelDiv = styled.article`
   }
   & > aside {
     width: 300px;
-    background-color: ${colors.light};
+    background-color: ${colors.secundary};
     height: 100vh;
     box-shadow: 0 2px 5px #0005;
     ${ComunFlex}
@@ -222,12 +222,14 @@ export const PanelDiv = styled.article`
     gap: 1em;
     justify-content: start;
     padding: 2em;
+    color:#fff;
     & > div {
       ${ComunFlex}
       gap:1em;
       & input {
         border: none;
-        border-bottom: solid 1px #000;
+        background-color:transparent;
+        border-bottom: solid 1px #fff;
         outline: none;
       }
     }
@@ -294,7 +296,7 @@ export const Table = styled.table`
     font-size: 0.6em; /* Cambio: Tamaño de fuente aumentado */
     font-weight: 100; /* Cambio: Fuente en negrita */
     padding: 1em 0;
-    background-color: ${colors.complemento}; /* Cambio: Color que combina con el Navbar */
+    background-color: ${colors.secundary}; /* Cambio: Color que combina con el Navbar */
     color: #fff; /* Cambio: Texto en color blanco */
     text-transform: uppercase;
     letter-spacing: 0.1em;

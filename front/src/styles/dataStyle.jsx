@@ -2,11 +2,11 @@
 import { css } from "styled-components";
 
 export const colors={
-    primary:"#848DD4",
-    secundary:"#61808C",
-    complemento:"#7799A6",
-    auxiliar:"#BFD1D9",
-    vejetal:"#1A261C",
+    primary:"#127369",
+    secundary:"#10403B",
+    complemento:"#8AA6A3",
+    auxiliar:"#BFBFBF",
+    vejetal:"#4C5958",
     light:"#fff",
     darck:"#000",
 }

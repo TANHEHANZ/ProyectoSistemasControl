@@ -25,7 +25,7 @@ const NavDash = () => {
         </div>
         <section>
           <FontAwesomeIcon icon={faHouse} />
-          <NavLink to="/dashboard/Panel">Panel General</NavLink>
+          <NavLink to="/dashboard">Panel General</NavLink>
         </section>
         {/* <section>
           <img src="" alt="" />
