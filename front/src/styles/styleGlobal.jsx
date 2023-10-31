@@ -107,10 +107,9 @@ export const Sensores = styled.article`
     width: 100%;
 
     & div {
-      width: 80%;
-      height: 20em;
+      width: 100%;
+      height: 30em;
       margin: 2em auto;
-      background-color: #0005;
     }
   }
   & table {
