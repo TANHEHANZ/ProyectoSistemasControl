@@ -19,14 +19,13 @@ const NavDash = () => {
       <nav>
         <div>
           <strong>
-            {" "}
             <FontAwesomeIcon icon={faBoreHole} bounce /> Sistemas
-          </strong>{" "}
+          </strong>
           de Control
         </div>
         <section>
           <FontAwesomeIcon icon={faHouse} />
-          <NavLink to="/dashboard/Panel">Panel General</NavLink>
+          <NavLink to="/dashboard">Panel General</NavLink>
         </section>
         {/* <section>
           <img src="" alt="" />

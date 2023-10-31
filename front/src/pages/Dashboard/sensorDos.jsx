@@ -1,32 +1,25 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Sensores } from "../../styles/styleGlobal";
 
 const SensorDos = () => {
+
+//   const [sensor , setSensor] = useState ([]);
+// const URL_API = "192.168.56.1/api/humedad"
+//   useEffect(() => {
+//     fetch('URL_API')
+//       .then((response) => response.json())
+//       .then((data) => setSensorData(data));
+//   }, []);
+
   return (
-    <Sensores>
-      <section>
-        <h2>Nombre del Sensor 2</h2>
-        <div>reportes</div>
-      </section>
-      <table>
-        <thead>
-          <tr>
-            <th>id</th>
-            <th>lectura</th>
-            <th>hora</th>
-            <th>fecha</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>datos</td>
-            <td>datos de lectura</td>
-            <td>time</td>
-            <td>datos</td>
-          </tr>
-        </tbody>
-      </table>
-    </Sensores>
+    <div>
+      <h1>Sensor Data</h1>
+      <ul>
+        {/* {sensorData.map((data) => (
+          <li key={data.id}>{data.value}</li>
+        ))} */}
+      </ul>
+    </div>
   );
 };
 

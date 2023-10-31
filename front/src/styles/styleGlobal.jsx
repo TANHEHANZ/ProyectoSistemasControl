@@ -21,6 +21,7 @@ export const Container = styled.section`
       gap:.5em;
       padding: 0 1em;
       margin: 0 auto;
+      transition:all .5s ease-in-out;
       &:hover {
         border-left: solid 4px ${colors.primary};
       }
@@ -134,7 +135,6 @@ border-radius:.5em;
       width: 100%;
       height: 20em;
       margin: 2em auto;
-      background-color: #0005;
     }
   }
  
@@ -244,7 +244,7 @@ export const PanelDiv = styled.article`
 `;
 export const Informaciones = styled.aside`
     width: 300px;
-    background-color: ${colors.light};
+    background-color: ${colors.secundary};
     height: 100vh;
     box-shadow: 0 2px 5px #0005;
     ${ComunFlex}
@@ -252,12 +252,14 @@ export const Informaciones = styled.aside`
     gap: 1em;
     justify-content: start;
     padding: 2em;
+    color:#fff;
     & > div {
       ${ComunFlex}
       gap:1em;
       & input {
         border: none;
-        border-bottom: solid 1px #000;
+        background-color:transparent;
+        border-bottom: solid 1px #fff;
         outline: none;
       }
     }
@@ -324,7 +326,7 @@ export const Table = styled.table`
     font-size: 0.6em; /* Cambio: Tamaño de fuente aumentado */
     font-weight: 100; /* Cambio: Fuente en negrita */
     padding: 1em 0;
-    background-color: ${colors.complemento}; /* Cambio: Color que combina con el Navbar */
+    background-color: ${colors.secundary}; /* Cambio: Color que combina con el Navbar */
     color: #fff; /* Cambio: Texto en color blanco */
     text-transform: uppercase;
     letter-spacing: 0.1em;

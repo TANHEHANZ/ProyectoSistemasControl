@@ -11,7 +11,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<NavDash />}>
-            <Route path="/dashboard/Panel" element={<Panel />} />
+            <Route path="/dashboard" element={<Panel />} />
             <Route path="/dashboard/Mapa" element={<Mapa />} />
             <Route path="/dashboard/Sensor1" element={<SensorUno />} />
             <Route path="/dashboard/Sensor2" element={<SensorDos />} />
