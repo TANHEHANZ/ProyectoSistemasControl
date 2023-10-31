@@ -2,9 +2,9 @@ import React from "react";
 import { PanelDiv } from "../../styles/styleGlobal";
 import Cars from "./cars";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleNodes, faMagnifyingGlass, faUserTie } from "@fortawesome/free-solid-svg-icons";
+import { faCircleNodes, faUserTie } from "@fortawesome/free-solid-svg-icons";
 import Dispocitivos from "./dispocitivos";
-
+import Informacion from "./Informacion";
 const Panel = () => {
   return (
     <PanelDiv>
@@ -24,19 +24,7 @@ const Panel = () => {
        </div>
     <Dispocitivos/>
       </article>
-      <aside>
-       
-        <div>
-       <FontAwesomeIcon icon={faUserTie} />
-       <h4>Informacion de cada componente</h4>
-       </div>
-       <div>
-          <input type="search"  placeholder="buscar"/>
-          <FontAwesomeIcon icon={faMagnifyingGlass} />
-        </div>
-        <section>cars</section>
-        <img src="" alt="" />
-      </aside>
+      <Informacion/>
     </PanelDiv>
   );
 };

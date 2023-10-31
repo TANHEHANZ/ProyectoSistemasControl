@@ -33,7 +33,7 @@ const NavDash = () => {
           <NavLink to="/dashboard/Mapa">Mapa</NavLink>
         </section> */}
         <small>
-          <FontAwesomeIcon icon={faCircleNodes} />{" "}
+          <FontAwesomeIcon icon={faCircleNodes} />
           <button onClick={() => setExpandir(!expandir)}>Sensores</button>
         </small>
         {expandir && (

@@ -98,27 +98,54 @@ export const NavLink = styled(Link)`
 `;
 export const Sensores = styled.article`
   ${ComunFlex}
-  width:100%;
-  flex-direction: column;
-  padding: 2em;
+  width: calc(100vw - 250px);
+  flex-direction: row;
   gap: 1em;
   & section {
     width: 100%;
+    height:100%;
+    padding:2em;
+& > div{
+  & aside{
+    ${ComunFlex}
+justify-content:start;
+gap:0.5em;
+  }
+}
+    & header{
+  ${ComunFlex}
+justify-content:start;
+gap:0.5em;
+& h2{
+  font-size:1.2em;
+}
+& > button{
+border:none;
+cursor: pointer;
+padding:0.5em 2em;
+background-color:${colors.complemento};
+color:${colors.light};
+margin: 0 2em ;
+border-radius:.5em;
+}
 
+    }
     & div {
-      width: 80%;
+      width: 100%;
       height: 20em;
       margin: 2em auto;
       background-color: #0005;
     }
   }
+ 
   & table {
-    margin: 1em auto;
-    width: 100%;
+    margin: 0 auto;
+    width: 70%;
     height: auto;
     border-collapse: collapse;
     position: relative;
     box-shadow: 0 5px 5px #0005;
+    padding:2em;
     & th {
       font-size: 0.6em; /* Cambio: Tamaño de fuente aumentado */
       font-weight: 100; /* Cambio: Fuente en negrita */
@@ -186,7 +213,9 @@ export const Sensores = styled.article`
       color: #222059; /* Cambio: Color que combina con el Navbar */
       cursor: pointer;
     }
+    
   }
+ 
 `;
 export const PanelDiv = styled.article`
   ${ComunFlex}
@@ -211,7 +240,9 @@ export const PanelDiv = styled.article`
       gap: 1em;
     }
   }
-  & > aside {
+ 
+`;
+export const Informaciones = styled.aside`
     width: 300px;
     background-color: ${colors.light};
     height: 100vh;
@@ -230,8 +261,8 @@ export const PanelDiv = styled.article`
         outline: none;
       }
     }
-  }
-`;
+`
+
 
 export const Sectioncar = styled.section`
   background-color: ${colors.primary};
