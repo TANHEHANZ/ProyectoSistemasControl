@@ -100,7 +100,7 @@ export const NavLink = styled(Link)`
 export const Sensores = styled.article`
   ${ComunFlex}
   width: calc(100vw - 250px);
-  flex-direction: row;
+  flex-direction: column;
   gap: 1em;
   & section {
     width: 100%;
