@@ -28,18 +28,7 @@ const Panel = () => {
         </div>
         <Dispocitivos />
       </article>
-      <aside>
-        <div>
-          <FontAwesomeIcon icon={faUserTie} />
-          <h4>Informacion de cada componente</h4>
-        </div>
-        <div>
-          <input type="search" placeholder="buscar" />
-          <FontAwesomeIcon icon={faMagnifyingGlass} />
-        </div>
-        <section>cars</section>
-        <img src="" alt="" />
-      </aside>
+    
     </PanelDiv>
   );
 };
