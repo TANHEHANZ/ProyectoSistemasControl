@@ -14,7 +14,7 @@ function App() {
             <Route path="/dashboard" element={<Panel />} />
             <Route path="/dashboard/Mapa" element={<Mapa />} />
             <Route path="/dashboard/Sensor1" element={<SensorUno />} />
-            <Route path="/dashboard/Sensor2" element={<SensorDos />} />
+            <Route path="/dashboard/Sensor2" element={<Mapa />} />
             <Route path="/dashboard/Sensor3" element={<Mapa />} />
             <Route path="/dashboard/Sensor4" element={<Mapa />} />
             <Route path="/dashboard/Graficos" element={<Mapa />} />

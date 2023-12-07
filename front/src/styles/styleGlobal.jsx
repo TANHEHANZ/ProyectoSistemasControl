@@ -149,7 +149,7 @@ border-radius:.5em;
     & th {
       font-size: 0.6em; /* Cambio: Tamaño de fuente aumentado */
       font-weight: 100; /* Cambio: Fuente en negrita */
-      padding: 1em 0;
+      padding: .5em 0;
       background-color: ${colors.complemento}; /* Cambio: Color que combina con el Navbar */
       color: #fff; /* Cambio: Texto en color blanco */
       text-transform: uppercase;

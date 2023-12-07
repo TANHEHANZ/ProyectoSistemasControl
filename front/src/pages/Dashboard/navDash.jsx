@@ -39,18 +39,18 @@ const NavDash = () => {
           <aside>
             <section>
             <FontAwesomeIcon icon={faWifi} rotation={270} />
-              <NavLink to="/dashboard/Sensor1">Sensor 1</NavLink>
+              <NavLink to="/dashboard/Sensor1">Sensor de Turbidez</NavLink>
             </section>
             <section>
             <FontAwesomeIcon icon={faWifi} rotation={270} />
-              <NavLink to="/dashboard/Sensor2">Sensor 2</NavLink>
+              <NavLink to="/dashboard/Sensor2">Sensor gps</NavLink>
             </section>
           </aside>
         )}
-        <section>
+        {/* <section>
           <FontAwesomeIcon icon={faFilter} />
           <NavLink to="/dashboard/Filtro">Filtro de datos</NavLink>
-        </section>
+        </section> */}
         <section>
           <FontAwesomeIcon icon={faDatabase} />
           <NavLink to="/dashboard/Historicos">Historicos Generales</NavLink>
